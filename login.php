@@ -7,6 +7,8 @@ if(($username=='admin') && ($password=='dreams%admin%login')){
     session_start();
     // Set session variables
     $_SESSION["log"] ='admin';
+    setcookie("bill", 0, time() + (86400), "/");
+    setcookie("swap", 0, time() + (86400), "/");
 if(isset($_POST['remember'])){
     //COOKIES for username
     setcookie ("username",$_POST["username"],time()+7*24*3600, "/","", 0);

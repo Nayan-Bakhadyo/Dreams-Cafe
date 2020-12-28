@@ -21,10 +21,10 @@
     <title>Dreams Cafe</title>
 </head>
 <?php
-session_start();
+// session_start();
 
-if( $_SESSION["log"]!='admin'){
-     header('Location: ../index.php');
-}
+// if( $_SESSION["log"]!='admin'){
+//      header('Location: ../index.php');
+// }
 ?>
 

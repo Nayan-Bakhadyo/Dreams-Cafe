@@ -171,17 +171,24 @@ a:hover{
 <hr>
     <div class="specialsec">
         <p class="spectitle mb-0">Today's Special</p>
+        <?php
+        $sql = "select * from specials WHERE flag=1";
+ $query = mysqli_query($conn,$sql);
+ if (mysqli_num_rows($query) > 0) {
+    while($row = mysqli_fetch_assoc($query)) { ?>
         <div class="row">
-            <img src="bur.jpg" class="specimg" alt="burger"> 
+            <img src="../admin/<?php echo $row['special_image'];?>" class="specimg" alt="<?php echo $row['special_name'];?>"> 
         </div>
         <div class="desc">
-           <a href="#"> <p class="spname"> <u> CHICKEN BURGER</u></p></a>
-            <p class="sremark"> <u>aso asg ashdgw asgdhavc</u> </p> 
-            <p class="sprice"><u>Rs.450</u></p>
+           <a href="#"> <p class="spname"> <u><?php echo $row['special_name'];?></u></p></a>
+            <p class="sremark"> <u><?php echo $row['remark'];?></u> </p> 
+            <p class="sprice"><u>Rs.<?php echo $row['special_price'];?></u></p>
         </div>
-    </div>
+        <hr>
+   <?php }}
+?>
 
-<hr><br><hr>
+<hr><br>
     <div class="container s">
     <?php 
       

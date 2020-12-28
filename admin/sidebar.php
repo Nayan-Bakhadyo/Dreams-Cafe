@@ -132,7 +132,7 @@
                                </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="incexp.php" ><i class=" fa fa-table"></i>Income/Expenditures                              </a>
+                                <a class="nav-link " href="incexpui.php" ><i class=" fa fa-inbox" aria-hidden="true"></i>Income/Expenditures                              </a>
                             </li>
                            
                         </ul>

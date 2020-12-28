@@ -17,7 +17,7 @@ include_once('waiter_sidenav.php');
                                             <table class="table">
                                                 <thead class="bg-light">
                                                     <tr class="border-0 ">
-                                                       
+                                                        <th class="border-0">ID</th>
                                                         <th class="border-0">Table no</th>
                                                         <th class="border-0">Order Item</th>
                                                     <th class="border-0">Quantity </th>
@@ -46,6 +46,7 @@ include_once('waiter_sidenav.php');
     ?>
                                                     <tr>
                             
+                                                        <td><?php echo "{$row['order_id']}"?></td>
                                                         <td><?php echo "{$row['table_no']}"?></td>
                                                         <td> <?php echo $food_name['food_name'] ?></td>
                                                         <td><?php echo "{$row['quantity']}"?></td>

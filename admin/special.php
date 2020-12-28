@@ -8,7 +8,7 @@ include('sidebar.php');
             <a href="addspecial.php" id="btnh" class="btn btn-primary btn-lg btn-block btn-huge"><h3>Add New Item </h3></a>
         </div>
         <div class="col-md-5">
-            <a href="existingspec.php" id="btnh" class="btn btn-primary btn-lg btn-block btn-huge"><h3 align="center">Choose Existing</h3></a>
+            <a href="vspecial.php" id="btnh" class="btn btn-primary btn-lg btn-block btn-huge"><h3 align="center">Choose Existing</h3></a>
         </div>
     
     </div>
